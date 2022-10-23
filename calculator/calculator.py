@@ -27,7 +27,7 @@ class Calculator:
 
     @timer
     @calculator_logger
-    @input_parser
+    #@input_parser
     def sub(self, a: Optional[int] = None, b: Optional[int] = None) -> int:
         if a:
             self._memory -= a
