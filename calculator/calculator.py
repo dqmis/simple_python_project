@@ -18,35 +18,51 @@ class Calculator:
     @timer
     @calculator_logger
     @input_parser
-    def add(self, a: Optional[int] = None, b: Optional[int] = None) -> int:
-        if a:
-            self._memory += a
-        if b:
-            self._memory += b
+    def add(self, *args, **kwargs) -> int:
+        
+        for i in args:
+            self._memory += i
+        
+        for key, value in kwargs.items():
+            self._memory += kwargs[key]
+
         return self._memory
 
     @timer
     @calculator_logger
     @input_parser
-    def sub(self, a: Optional[int] = None, b: Optional[int] = None) -> int:
-        if a:
-            self._memory -= a
-        if b:
-            self._memory -= b
+    def sub(self, *args, **kwargs) -> int:
+        
+        for i in args:
+            self._memory -= i
+        
+        for key, value in kwargs.items():
+            self._memory -= kwargs[key]
+
         return self._memory
 
     @timer
     @calculator_logger
     @input_parser
-    def mul(self, a: Optional[int]) -> int:
-        if a:
-            self._memory *= a
+    def mul(self, *args, **kwargs) -> int:
+        
+        for i in args:
+            self._memory *= i
+        
+        for key, value in kwargs.items():
+            self._memory *= kwargs[key]
+
         return self._memory
 
     @timer
     @calculator_logger
     @input_parser
-    def pow(self, a: Optional[int]) -> int:
-        if a:
-            self._memory = self._memory**a
+    def pow(self, *args, **kwargs) -> int:
+        
+        for i in args:
+            self._memory = self._memory ** i
+        
+        for key, value in kwargs.items():
+            self._memory = self._memory ** kwargs[key]
+
         return self._memory
