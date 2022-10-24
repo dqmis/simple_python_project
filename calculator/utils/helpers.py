@@ -1,15 +1,22 @@
 from typing import Callable, Optional
+import time
+import logging
 
 
 def timer(fn: Callable) -> Callable:
     # TODO: Log how much time has passed
-    pass
+    def track_time():
+        start_time = time.time()
+        print(f'Vykdymo laikas = {time.time() - start_time}')
+    return track_time
 
 
 def calculator_logger(fn: Callable) -> Callable:
     # TODO: Log function name and it's args and kwargs
-    pass
-
+    def cal_loger(*args):
+            cal_log_info = (f"Funkcija {fn.__name__} su args {args}")
+            return fn(*args)
+    return cal_loger
 
 def input_parser(fn: Callable) -> Callable:
     def convert_to_int(*args) -> Optional[int]:
