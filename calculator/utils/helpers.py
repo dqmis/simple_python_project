@@ -1,15 +1,16 @@
 from typing import Callable, Optional
 import logging
+from datetime import datetime
 
 logging.basicConfig(filename="output.log", level=logging.INFO)
 
 def timer(fn: Callable) -> Callable:
     # TODO: Log how much time has passed
-    from time import time as t
+    
     def time_calc(*args, **kwargs):
-        start_time = t.time()
+        start_time = datetime.now()
         res = fn(*args, **kwargs)
-        end_time = t.time()
+        end_time = datetime.now()
         execution_time = end_time - start_time
         print(f"Process time: {execution_time}")
         return res
@@ -19,7 +20,7 @@ def timer(fn: Callable) -> Callable:
 def calculator_logger(fn: Callable) -> Callable:
     # TODO: Log function name and it's args and kwargs
     def logger(*args, **kwargs):
-        logging.info(f"Runing a function {fn.__name__} w/ {args} and {kwargs}")
+        logging.info(f"{datetime.now()} test Runing a function {fn.__name__} w/ {args} and {kwargs}")
         return fn()
     return logger
 
