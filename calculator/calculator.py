@@ -1,6 +1,6 @@
 from typing import Optional
 
-from calculator.utils.helpers import calculator_logger, input_parser, timer
+from calculator.utils.helpers import timer , calculator_logger #, input_parser
 
 
 class Calculator:
@@ -17,7 +17,7 @@ class Calculator:
 
     @timer
     @calculator_logger
-    @input_parser
+    #@input_parser
     def add(self, a: Optional[int] = None, b: Optional[int] = None) -> int:
         if a:
             self._memory += a
@@ -27,7 +27,7 @@ class Calculator:
 
     @timer
     @calculator_logger
-    @input_parser
+    #@input_parser
     def sub(self, a: Optional[int] = None, b: Optional[int] = None) -> int:
         if a:
             self._memory -= a
@@ -37,7 +37,7 @@ class Calculator:
 
     @timer
     @calculator_logger
-    @input_parser
+    #@input_parser
     def mul(self, a: Optional[int]) -> int:
         if a:
             self._memory *= a
@@ -45,7 +45,7 @@ class Calculator:
 
     @timer
     @calculator_logger
-    @input_parser
+    #@input_parser
     def pow(self, a: Optional[int]) -> int:
         if a:
             self._memory = self._memory**a
