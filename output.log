@@ -1,6 +1,6 @@
-INFO:root:Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x0000012156499F10>, 410) and {}
-INFO:root:Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x0000012156499F10>, 410, 10) and {}
-INFO:root:Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x0000012156499F10>, 410, 10) and {}
-INFO:root:Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x0000012156499F10>, 410) and {}
-INFO:root:Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x0000012156499F10>, 410) and {}
-INFO:root:Runing a function add w/ (<calculator.calculator.Calculator object at 0x000001CF6EC22E50>, 500) and {}
+INFO:root:2022-10-30 13:42:32.628332 Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x000002B6222C6D30>, 69) and {}
+INFO:root:2022-10-30 13:45:18.188644 Runing a function convert_to_int w/ (<calculator.calculator.Calculator object at 0x000002B6222C6D30>, 69) and {}
+INFO:root:2022-10-30 13:47:11.108537 Runing a function add w/ (<calculator.calculator.Calculator object at 0x0000019A56206D30>, 69) and {}
+INFO:root:2022-10-30 13:47:45.660493 Runing a function add w/ (<calculator.calculator.Calculator object at 0x0000019A56206D30>, 69) and {}
+INFO:root:2022-10-30 13:48:35.316542 Runing a function add w/ (<calculator.calculator.Calculator object at 0x0000019A56206D30>, 69) and {}
+INFO:root:2022-10-30 13:49:22.300583 Runing a function add w/ (<calculator.calculator.Calculator object at 0x0000019A56206D30>, 69) and {}
